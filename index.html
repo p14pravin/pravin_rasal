@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .boarderDiv {
+            border: 1px solid black;
+            border-radius: 8px;
+        }
+
+        .headline {
+            font-family: 'Lucida Console', 'Courier New', monospace;
+            font-size: 40px;
+        }
+
+        .headImg {
+            border: 5px solid white;
+            border-radius: 5px;
+        }
+
+
+
+        .feature {
+            border-radius: 15px 0px 15px 0px;
+            box-shadow: 4px 4px 4px 4px;
+        }
+
+        .service {
+            box-shadow: 0 0 50px black;
+        }
+
+        .list-style {
+            list-style-type: none;
+        }
+
+        .link {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+        }
+
+        a:active {
+            color: #e5ff00;
+        }
+
+        .top-btn {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            margin: 30px;
+            border-radius: 5px;
+        }
+
+        .posRel {
+            position: relative;
+        }
+
+        .icon-service {
+            position: absolute;
+            top: -43px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 50px;
+            background-color: white;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navBar {
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+
+            .top-laptop {
+                display: block;
+            }
+
+            .top-mobile {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .top-mobile {
+                display: block;
+            }
+
+            .top-laptop {
+                display: none;
+            }
+        }
+
+        .exp {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 25px;
+            text-align: center;
+
+        }
+
+        .experience {
+            font-size: 35px;
+            padding: 5px;
+            color: red;
+            border-radius: 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row justify-content-end">
+            <div id="top" class="col-md-3 boarderDiv pt-1 pb-1 navBar"
+                style="height: 100vh; background-color: rgb(233, 231, 229);">
+                <img width="100%"
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
+                    alt="">
+                <div class="text-center" style="margin-top: -50px;">
+                    <img class="rounded-circle" width="35%" src="/src/pravin_rasal_profile.JPG" alt="">
+                    <h3>Pravin Rasal</h3>
+                    <h5>Web Application Developer</h5>
+                    <p style="font-size: 14px;">2 years of IT experience in the front end development, analysis,
+                        support and maintenance of
+                        application as well as post-producation support in front end development.
+                    </p>
+                    <div>
+                        <a class="text-success" href="tel:+91 70400 59643"><i class="bi bi-telephone rounded-circle fs-3 m-2"></i></a>
+                        <a class="text-primary" href="https://www.linkedin.com/in/er-pravin-rasal/"><i class="bi bi-linkedin rounded-circle fs-3 m-2"></i></a>
+                        <a class="text-danger" href="https://www.instagram.com/er._pravin_rasal/"><i class="bi bi-instagram rounded-circle fs-3 m-2"></i></a>
+                        <a class="text-warning" href="mailto:p14pravin@gmail.com"><i class="bi bi-google rounded-circle fs-3 m-2"></i></a>
+                    </div>
+                    <div class="pt-2">
+
+                        <li class="list-style pt-1"><a class="link" href="#home">Home</a></li>
+                        <li class="list-style pt-1"><a class="link" href="#about">About</a></li>
+                        <li class="list-style pt-1"><a class="link" href="#skills">Skills</a></li>
+                        <li class="list-style pt-1"><a class="link" href="#experience">Experience</a></li>
+                        <li class="list-style pt-1"><a class="link" href="#services">Services</a></li>
+                        <li class="list-style pt-1"><a class="link" href="#education">Education</a></li>
+                    </div>
+                </div>
+            </div>
+            <!----------------------- Home ------------------------->
+            <div id="home" class="col-md-9"
+                style="background: linear-gradient(45deg, rgba(2,0,36,1) 0%,rgba(0,212,255,1) 100%, rgba(255,137,127,1) 48%);"
+                ;>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center container" style="height: 100vh;">
+                            <div>
+                                <p class="headline" style="color: white; font-weight: bolder;">I am <br> Web Developer
+                                </p>
+                                <p style="color: white;">
+                                    Skilled of HTML5, CSS 3, JavaScript, Angular Js, Bootstrap framework, Java, PHP,.net
+                                    framework, sql, AWS EC2 Server and Azure technology.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-center container overflow-hidden" style="height: 100vh;">
+                        <img class="img-fluid border border-4 border-white" src="/src/pravin_rasal.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------- About ------------------------->
+        <div id="about" class="row justify-content-end"
+            style="background: linear-gradient(45deg, rgb(180, 247, 156) 42%, rgb(206, 238, 205) 100%);">
+            <div class="col-sm-9">
+                <div class="d-flex align-items-center container" style="height: 100vh;">
+                    <div>
+                        <p>ABOUT US</p>
+                        <h2 class="text-light fw-bolder">Who I am?</h2>
+                        <p class="pt-2 fw-bolder">I'm Pravin Rasal, working as a web developer. I have 2 year IT
+                            experience in the front end development, analysis, support and maintenance of application.
+                        </p>
+                        <p>Experience in requirement analyst, documentations, design, developement support in front-end
+                            development.</p>
+                        <!-- <div class="row pt-2">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col col-sm-6">
+                                        <div class="m-2 text-center p-2 feature redBottom"
+                                            style="background-color: white;">
+                                            <i class="bi bi-boxes text-danger" style="font-size: 30px;"></i><br>
+                                            <h6>Website Designing</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <div class="m-2 text-center p-2 feature yellowBottom"
+                                            style="background-color: white;">
+                                            <i class="bi bi-file-earmark-code text-warning"
+                                                style="font-size: 30px;"></i><br>
+                                            <h6>Web Developement</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col col-sm-6">
+                                        <div class="m-2 text-center p-2 feature primaryBottom"
+                                            style="background-color: white;">
+                                            <i class="bi bi-command text-primary" style="font-size: 30px;"></i><br>
+                                            <h6>App Developement</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col col-sm-6">
+                                        <div class="m-2 text-center p-2 feature greenBottom"
+                                            style="background-color: white;">
+                                            <i class="bi bi-cpu text-success" style="font-size: 30px;"></i><br>
+                                            <h6>Software Developement</h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-------------- Skills --------------->
+        <div id="skills" class="row justify-content-end"
+            style="background: linear-gradient(45deg, rgb(247, 214, 214) 42%, rgb(235, 15, 15) 100%);">
+            <div class="col-sm-9">
+                <div class="d-flex align-items-center container" style="height: 100vh;">
+                    <div class="row">
+                        <p>MY SPECIALTY</p>
+                        <h2 class="text-black fw-bolder">MY SKILLS</h2>
+                        <p>Skilled of HTML5, CSS 3, JavaScript, Angular Js, Bootstrap framework, Java, PHP,.net
+                            framework, SQL, AWS EC2 Server and Azure technology.</p>
+                        <div class="col-sm-4 pt-3">
+                            <span class="fw-bolder">HTML</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-3">
+                            <span class="fw-bolder">CSS</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-3">
+                            <span class="fw-bolder">JavaScript</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-3">
+                            <span class="fw-bolder">AngularJs/Node js</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-3">
+                            <span class="fw-bolder">Bootstrap Framework</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-3">
+                            <span class="fw-bolder">Java/.Net</span>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-4 pt-3">
+                                    <span class="fw-bolder">Azure Technology</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 55%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <span>55%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------- Experience ------------------->
+        <div id="experience" class="row justify-content-end" style="background-color: #dbdbdb;">
+            <div class="col-sm-9">
+                <div class="d-flex align-items-center container" style="height: 100vh;">
+                    <div class="row">
+                        <p>EXPERIENCE</p>
+                        <h2 class="text-black fw-bolder">WORK EXPERIENCE</h2>
+                        <div class="d-flex pt-3">
+                            <div class="exp">
+                                <i class="bi bi-bookmark-star experience" style="font-size: 35px;"></i>
+                            </div>
+                            <div class="row ps-2 pt-3 ms-3 bg-light rounded">
+                                <p class="fw-light"><span style="font-size: 20px;"><b>Front End Developer</b></span> at
+                                    Fujitsu. <span style="color: gray;">Jan-2022-Current</span></p>
+                                <p>A japanese corporate called Fujitsu provide tools and services for information and
+                                    communication technologies.
+                                    I'm Working on marketing project as a role of Front-end Developer.</p>
+                                <p><b>Technical Skill:</b> HTML5, CSS3, JavaScript, SDL Tridion Tool, Sitecore Tool, VS
+                                    Code.</p>
+                                <p><b>Soft Skills:</b> Time Management, Communication, A customer-orieted attitude.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------- Services ----------------->
+        <div id="services" class="row justify-content-end" style="background-color: rgb(219, 248, 232);">
+            <div class="col-sm-9">
+                <div class="d-flex align-items-center container" style="height: 100vh;">
+
+                    <div class="row">
+                        <h2 class="text-black fw-bolder">SERVICES</h2>
+                        <div class="col-sm-4 pt-5">
+                            <div class="m-2 text-center p-2 feature border-bottom border-4 border-danger posRel bg-white">
+                                <i class="bi bi-boxes text-danger icon-service"></i><br>
+                                <h6>Web Designing</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-5">
+                            <div class="m-2 text-center p-2 feature border-bottom border-4 border-warning posRel bg-white">
+                                <i class="bi bi-file-earmark-code text-warning icon-service"></i><br>
+                                <h6>Web Developement</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-5">
+                            <div class="m-2 text-center p-2 feature border-bottom border-4 border-success posRel bg-white">
+                                <i class="bi bi-cloud-upload text-success icon-service"></i><br>
+                                <h6>Web Hosting</h6>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 pt-5">
+                            <div class="m-2 text-center p-2 feature border-bottom border-4 border-primary posRel bg-white">
+                                <i class="bi bi-cpu text-primary icon-service"></i><br>
+                                <h6>Software Developement</h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 pt-5">
+                            <div class="m-2 text-center p-2 feature border-bottom border-4 border-secondary posRel bg-white">
+                                <i class="bi bi-columns-gap text-secondary icon-service"></i><br>
+                                <h6>Application Developement</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------- Education --------------->
+        <div id="education" class="row justify-content-end" style="background-color: #f5e5e5;">
+            <div class="col-sm-9">
+                <div class="d-flex align-items-center container justify-content-center" style="height: 100vh;">
+                    <div>
+                        <div class="row ms-1 me-1">
+                            <div class="col-sm-12 bg-secondary pt-2 pb-2"><span class="text-light fw-bold">Bachelor's of
+                                    Engineering</span>
+                            </div>
+                        </div>
+                        <div class="row ms-1 me-1 mt-2 bg-white">
+                            <div class="col-sm-12 border">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">2016</th>
+                                            <th scope="col">Computer Engineering</th>
+                                            <th scope="col">CGPA 7.92 / 71.70%</th>
+                                        </tr>
+                                        <tr>
+                                            <td><b>to 2021</b></td>
+                                            <td> SCS College of Engineering, Pune</td>
+                                            <td>Savitraibai Phule Pune University</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row ms-1 me-1 pt-3">
+                            <div class="col-sm-12 bg-secondary pt-2 pb-2"><span class="text-light fw-bold">Higher
+                                    Secondary
+                                    Education</span>
+                            </div>
+                        </div>
+                        <div class="row ms-1 me-1 mt-2 bg-white">
+                            <div class="col-sm-12 border">
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">2015</th>
+                                            <th scope="col">HSC</th>
+                                            <th scope="col">58.46%</th>
+                                        </tr>
+                                        <tr>
+                                            <td><b>to 2016</b></td>
+                                            <td>A T Junior College, Bhor</td>
+                                            <td>State Board of Maharashtra</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row ms-1 me-1 pt-3">
+                            <div class="col-sm-12 bg-secondary pt-2 pb-2"><span class="text-light fw-bold">Secondary
+                                    Secondary
+                                    Education</span>
+                            </div>
+                        </div>
+                        <div class="row ms-1 me-1 mt-2 bg-white">
+                            <div class="col-sm-12 border">
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">2013</th>
+                                            <th scope="col">SSC</th>
+                                            <th scope="col">82.60%</th>
+                                        </tr>
+                                        <tr>
+                                            <td><b>to 2014</b></td>
+                                            <td>Rameshwar Vidyalaya, Wing</td>
+                                            <td>State Board of Maharashtra</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-dark text-white">
+        <div class="row justify-content-end">
+            <div class="col-sm-9">
+                <footer class="py-3 my-4">
+                    
+                    <p class="text-center">© 2023 Pravin Rasal</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <div class="top-btn top-laptop" style="background-color: rgb(88, 88, 88);">
+        <a href="#home"><i class=" bi bi-capslock-fill p-2" style="font-size: 30px;"></i></a>
+    </div>
+    <div class="top-btn top-mobile" style="background-color: rgb(88, 88, 88);">
+        <a href="#top"><i class=" bi bi-capslock-fill p-2" style="font-size: 30px;"></i></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
